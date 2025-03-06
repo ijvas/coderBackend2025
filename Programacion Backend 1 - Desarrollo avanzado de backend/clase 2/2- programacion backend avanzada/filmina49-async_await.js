@@ -1,7 +1,7 @@
 const dividir = (dividendo,divisor) => { 
     return new Promise((resolve,reject)=>{  //Al hacer una promise, estamos pasando dos parametros, resolve y reject
         if(divisor===0){
-            reject('No se pueden ahcer divisiones por cero')
+            reject('No se pueden hacer divisiones por cero')
             /*
             Rechazamos la operación porque no es posible dividir por cero, no puedo cumplirle al usuario la promera que le hice sobre dividir sus números.
             */
