@@ -1,0 +1,22 @@
+https://momentjs.com/
+
+import { createHmac } from 'node:crypto';
+
+
+
+Una breve lista de los archivos que podemos manipular con fs:
+
+Principalmente:
+JSON: .json (ideal para almacenar datos estructurados)
+Logs: .log
+Textos: .txt, .md, .csv
+HTML/CSS/JavaScript: .html, .css, .js
+
+También: 
+Archivos de configuración: .env, .xml, .yml
+Imágenes: .jpg, .png, .gif (aunque no puedes "editar" directamente, puedes copiarlos o moverlos)
+Documentos de Office: .docx, .xlsx, .pptx
+PDF: .pdf
+Binarios: .bin
+Archivos comprimidos: .zip, .tar, .gz
+Audios/Videos: .mp3, .mp4, .wav
