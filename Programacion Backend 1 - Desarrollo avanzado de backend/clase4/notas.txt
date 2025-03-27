@@ -1,0 +1,24 @@
+thunder client extención VSC
+
+https://www.postman.com/
+
+https://expressjs.com/
+
+https://http.cat/
+
+Si el ".params" extrae los parámetros incluidos en la ruta. Funcionaría también funcionaría con Query Params?. 
+Por ejemplo:
+Route Paramsﾠ/usuario/:id
+Ejemplo: ﾠ/usuario/123
+Query Paramsﾠ/usuario?id=123ﾠ/usuario?id=123&activo=true
+
+NO, req.params solo funciona para extraer parámetros que están en la ruta como: /usuario/:id En cambio, los Query Params Saca lo que está después del ?. uno es parte de la definicion y otro es opcional .no son lo mismo ni funcionan igual, aunque te puedan traer los mismos valores pero de lugares distintos. Pueden traer el mismo dato (un id por ej), pero:
+Se usan distinto
+Vienen de lugares distintos y Tienen objetivos diferentes. tutora tip:  params ➔ se usa cuando el dato es obligatorio en la ruta
+query ➔ se usa para filtros o cosas opcionales
+
+
+
+
+app.use(express.json());
+Le dice a Express que pueda recibir y entender JSON en el body de las peticiones POST, PUT o PATCH
