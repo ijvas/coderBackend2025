@@ -4,16 +4,19 @@ const generarNumerosAleatorios = () =>{
     return new Promise((resolve,reject) => {
  
         try {
-            const conteo = {}
-
-            for (let i = 0; i < 10000; i++){
- 
-                const num = generarNumeroAleatorio(1,20)
-
-                conteo[num] = (conteo[num] || 0) + 1
-            }
-
-            resolve(conteo)
+            setTimeout(() => {
+                
+                const conteo = {}
+    
+                for (let i = 0; i < 10000; i++){
+     
+                    const num = generarNumeroAleatorio(1,20)
+    
+                    conteo[num] = (conteo[num] || 0) + 1
+                }
+    
+                resolve(conteo)
+            }, 2000);
  
         } catch (error) {
             reject(error)
@@ -27,7 +30,7 @@ const generarNumerosAleatorios = () =>{
 
 const ejecutarGeneracion = async() =>{
     try {
-        const resultado = generarNumerosAleatorios()
+        const resultado = await generarNumerosAleatorios()
 
         console.log('Proceso completado. Resultado: ')
 
