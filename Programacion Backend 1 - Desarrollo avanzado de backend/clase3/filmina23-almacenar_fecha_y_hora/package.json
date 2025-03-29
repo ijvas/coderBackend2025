@@ -1,0 +1,15 @@
+{
+  "name": "filmina23-almacenar_fecha_y_hora",
+  "version": "1.0.0",
+  "description": "",
+  "main": "filmina23.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.30.1"
+  }
+}
