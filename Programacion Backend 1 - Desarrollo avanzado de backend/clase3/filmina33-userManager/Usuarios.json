@@ -1,0 +1,14 @@
+[
+  {
+    "nombre": "Ismael",
+    "apellido": "Vasconcel",
+    "edad": 35,
+    "curso": "Backend"
+  },
+  {
+    "nombre": "Vero",
+    "apellido": "beni",
+    "edad": 38,
+    "curso": "Web Design"
+  }
+]
