@@ -1,0 +1,35 @@
+[
+  {
+    "title": "Laptop Lenovo",
+    "description": "Lenovo i3",
+    "code": "Lenovo123",
+    "price": 1000,
+    "status": true,
+    "stock": 5,
+    "category": "Laptops",
+    "thumbnails": [],
+    "id": 1
+  },
+  {
+    "title": "Laptop Asus",
+    "description": "Asus i5",
+    "code": "Asus123",
+    "price": 1000,
+    "status": true,
+    "stock": 10,
+    "category": "Laptops",
+    "thumbnails": [],
+    "id": 2
+  },
+  {
+    "title": "Desktop PC",
+    "description": "Desktop i7",
+    "code": "Desktop123",
+    "price": 1000,
+    "status": true,
+    "stock": 5,
+    "category": "Desktop",
+    "thumbnails": [],
+    "id": 3
+  }
+]
