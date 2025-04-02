@@ -7,16 +7,8 @@
     "id": 2,
     "products": [
       {
-        "product": "2",
-        "quantity": 4
-      },
-      {
-        "product": "3",
-        "quantity": 1
-      },
-      {
         "product": "4",
-        "quantity": 1
+        "quantity": 2
       }
     ]
   },
@@ -26,15 +18,6 @@
   },
   {
     "id": 4,
-    "products": [
-      {
-        "product": "1",
-        "quantity": 2
-      },
-      {
-        "product": "3",
-        "quantity": 1
-      }
-    ]
+    "products": []
   }
 ]
