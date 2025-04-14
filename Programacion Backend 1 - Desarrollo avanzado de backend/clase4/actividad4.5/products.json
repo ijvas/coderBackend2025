@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Skateboard",
+    "brand": "Toy Machine",
+    "id": 1
+  },
+  {
+    "name": "Skateboard",
+    "brand": "World industries",
+    "id": 2
+  },
+  {
+    "name": "Skateboard",
+    "brand": "Plan B",
+    "id": 3
+  }
+]
