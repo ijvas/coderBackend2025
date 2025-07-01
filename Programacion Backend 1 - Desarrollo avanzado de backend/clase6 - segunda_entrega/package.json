@@ -1,0 +1,15 @@
+{
+  "name": "src",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "app.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0",
+    "express-handlebars": "^8.0.3",
+    "socket.io": "^4.8.1"
+  }
+}
