@@ -1,0 +1,197 @@
+[
+  {
+    "title": "Laptop Lenovo",
+    "description": "Lenovo i3",
+    "code": "Lenovo123",
+    "price": 1000,
+    "status": true,
+    "stock": 5,
+    "category": "Laptops",
+    "thumbnails": "",
+    "id": 1
+  },
+  {
+    "title": "Laptop Lenovo",
+    "description": "Lenovo i5",
+    "code": "Lenovo12345",
+    "price": 2000,
+    "status": true,
+    "stock": 10,
+    "category": "Laptops",
+    "thumbnails": "",
+    "id": 2
+  },
+  {
+    "title": "Laptop Asus",
+    "description": "Asus i5",
+    "code": "Asus123",
+    "price": 3000,
+    "status": true,
+    "stock": 5,
+    "category": "Laptops",
+    "thumbnails": "",
+    "id": 3
+  },
+  {
+    "title": "Compu",
+    "description": "Tremenda",
+    "code": "123455",
+    "price": "10000",
+    "stock": "1",
+    "category": "Isma",
+    "id": 4
+  },
+  {
+    "title": "dasdas",
+    "description": "dasdas",
+    "code": "dasdas",
+    "price": "3231",
+    "stock": "2",
+    "category": "asddasdas",
+    "id": 5
+  },
+  {
+    "title": "Compu",
+    "description": "Tremenda",
+    "code": "123455",
+    "price": "10000",
+    "stock": "1",
+    "category": "Isma",
+    "id": 6
+  },
+  {
+    "title": "Compu",
+    "description": "Tremenda",
+    "code": "123455",
+    "price": "10000",
+    "stock": "1",
+    "category": "Isma",
+    "id": 7
+  },
+  {
+    "title": "Compu",
+    "description": "Tremenda",
+    "code": "123455",
+    "price": "10000",
+    "stock": "1",
+    "category": "Isma",
+    "id": 8
+  },
+  {
+    "title": "Compu",
+    "description": "Tremenda",
+    "code": "123455",
+    "price": "10000",
+    "stock": "1",
+    "category": "Isma",
+    "id": 9
+  },
+  {
+    "title": "Compu",
+    "description": "Tremenda",
+    "code": "123455",
+    "price": "10000",
+    "stock": "1",
+    "category": "Isma",
+    "id": 10
+  },
+  {
+    "title": "Compu",
+    "description": "Tremenda",
+    "code": "123455",
+    "price": "10000",
+    "stock": "1",
+    "category": "Isma",
+    "id": 11
+  },
+  {
+    "title": "Compu",
+    "description": "Tremenda",
+    "code": "123455",
+    "price": "10000",
+    "stock": "1",
+    "category": "Isma",
+    "id": 12
+  },
+  {
+    "title": "dasdas",
+    "description": "dasdas",
+    "code": "dasdas",
+    "price": "3231",
+    "stock": "2",
+    "category": "asddasdas",
+    "id": 13
+  },
+  {
+    "title": "dasdas",
+    "description": "dasdas",
+    "code": "dasdas",
+    "price": "3231",
+    "stock": "2",
+    "category": "asddasdas",
+    "id": 14
+  },
+  {
+    "title": "dasdas",
+    "description": "dasdas",
+    "code": "dasdas",
+    "price": "3231",
+    "stock": "2",
+    "category": "asddasdas",
+    "id": 15
+  },
+  {
+    "title": "dasdas",
+    "description": "dasdas",
+    "code": "dasdas",
+    "price": "3231",
+    "stock": "2",
+    "category": "asddasdas",
+    "id": 16
+  },
+  {
+    "title": "dasdas",
+    "description": "dasdas",
+    "code": "dasdas",
+    "price": "3231",
+    "stock": "2",
+    "category": "asddasdas",
+    "id": 17
+  },
+  {
+    "title": "dasdas",
+    "description": "dasdas",
+    "code": "dasdas",
+    "price": "3231",
+    "stock": "2",
+    "category": "asddasdas",
+    "id": 18
+  },
+  {
+    "title": "Isma",
+    "description": "sdadasda",
+    "code": "dadasdas",
+    "price": "321312412412312",
+    "stock": "432",
+    "category": "dsadasds",
+    "id": 19
+  },
+  {
+    "title": "Vero",
+    "description": "dasdasdas",
+    "code": "dasdasdas",
+    "price": "3213",
+    "stock": "3213",
+    "category": "dasdasdasda",
+    "id": 20
+  },
+  {
+    "title": "Prueba",
+    "description": "dsadas",
+    "code": "12",
+    "price": "456",
+    "stock": "10",
+    "category": "Codigo",
+    "id": 21
+  }
+]
