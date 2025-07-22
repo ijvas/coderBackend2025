@@ -1,9 +1,40 @@
-<div>
-    <h1>HOME</h1>
+<div class="container">
+
+    <div class="row">
+        <div class="col"></div>
+        <div class="col"><h1>HOME</h1></div>
+        <div class="col"></div>
+    </div>
+    
+</div>
+    
+<div class="container">
+
     <h2>Lista de productos</h2>
-    <ul>
+
+    <div class="row d-flex justify-content-center">
         {{#each products}}
-            <li>{{this.title}} - {{this.price}}</li>
+            <div class="card mx-auto" style="width: 18rem;">
+                <img src="{{this.thumbnail}}" class="card-img-top" alt="product">
+                <div class="card-body">
+                    <h5 class="card-title">{{this.title}}</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">{{this.category}}</h6>
+                    <p class="card-text">{{this.description}}</p>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">{{this.price}}</h6>
+                    <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
         {{/each}}
-    </ul>
+    </div>
+
+    <div class="row">
+        <div class="col"></div>
+        <div class="col d-flex justify-content-center gap-3">
+            {{#each links}}
+                <a href=" {{this.link}} " class="btn btn-primary mt-3"> {{this.text}} </a>
+            {{/each}}
+        </div>
+        <div class="col"></div>
+    </div>
+
 </div>

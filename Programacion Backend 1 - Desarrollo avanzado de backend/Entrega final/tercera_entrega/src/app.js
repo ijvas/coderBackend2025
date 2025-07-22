@@ -1,6 +1,5 @@
 import express from 'express'
 import viewsRouter from './routes/views.router.js'
-
 import cartsRouter from './routes/cart.router.js'
 import productsRouter from './routes/product.router.js'
 import connectMongoDB from './config/db.js'
