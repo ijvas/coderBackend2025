@@ -7,12 +7,12 @@
     </div>
 </div>
 
-<div class="container" id="productsList">
+<div class="container">
     <h2>Lista de productos</h2>
-
-    <div class="row d-flex justify-content-center">
+    
+    <div class="row d-flex justify-content-center mx-auto" id="productsList">
         {{#each products}}
-            <div class="card mx-auto" style="width: 18rem;" data-id="{{this.id}}">
+            <div class="card mx-auto mb-4" style="width: 18rem;" data-id="{{this.id}}">
                 <img src="{{this.thumbnail}}" alt="img" class="card-img-top">
                 <div class="card-body">
                     <h5 class="card-title">{{this.title}}</h5>
@@ -38,30 +38,32 @@
     
 </div>
 
-<form id="formulario" action="http://localhost:8080/api/products" method="post" class="mt-5 mb-3">
+<div class="container">
+    <form id="formulario" action="http://localhost:8080/api/products" method="post" class="mt-5 mb-3">
 
-    <h2>Agregue un producto:</h2>
-    <label for="title" class="form-label">Nombre del producto:</label>
-    <input type="text" name="title" class="form-control" id="titleInput" placeholder="Inserte nombre.." required>
+        <h2>Agregue un producto:</h2>
+        <label for="title" class="form-label">Nombre del producto:</label>
+        <input type="text" name="title" class="form-control" id="titleInput" placeholder="Inserte nombre.." required>
 
-    <label for="description" class="form-label">Descripción:</label>
-    <input type="text" name="description" class="form-control" id="descriptionInput" placeholder="Inserte descripción.." required>
+        <label for="description" class="form-label">Descripción:</label>
+        <input type="text" name="description" class="form-control" id="descriptionInput" placeholder="Inserte descripción.." required>
 
-    <label for="code" class="form-label">Código:</label>
-    <input type="text" name="code" class="form-control" id="codeInput" placeholder="Inserte codigo de producto.." required>
+        <label for="code" class="form-label">Código:</label>
+        <input type="text" name="code" class="form-control" id="codeInput" placeholder="Inserte codigo de producto.." required>
 
-    <label for="price" class="form-label">Precio:</label>
-    <input type="number" name="price" class="form-control" id="priceInput" placeholder="Inserte el precio del producto.." required>
+        <label for="price" class="form-label">Precio:</label>
+        <input type="number" name="price" class="form-control" id="priceInput" placeholder="Inserte el precio del producto.." required>
 
-    <label for="stock" class="form-label">Stock:</label>
-    <input type="number" name="stock" class="form-control" id="stockInput" placeholder="Insert stock.." required>
+        <label for="stock" class="form-label">Stock:</label>
+        <input type="number" name="stock" class="form-control" id="stockInput" placeholder="Insert stock.." required>
 
-    <label for="category" class="form-label">Categoría:</label>
-    <input type="text" name="category" class="form-control" id="categoryInput" placeholder="Inserte categoría.." required>
+        <label for="category" class="form-label">Categoría:</label>
+        <input type="text" name="category" class="form-control" id="categoryInput" placeholder="Inserte categoría.." required>
 
-    <button type="submit" class="btn btn-primary mt-3">Enviar</button>
+        <button type="submit" class="btn btn-primary mt-3">Enviar</button>
 
-</form>
+    </form>
+</div>
 
 <script src="/socket.io/socket.io.js"></script>
 <script src="/js/index.js"></script>
