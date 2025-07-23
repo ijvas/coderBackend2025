@@ -17,6 +17,16 @@ productsRouter.get('/', async(req,res) => {
     }
 })
 
+productsRouter.get('/:pid', async(req,res)=>{
+    try {
+        const productId = req.params.pid
+        const product = await Product.findById(productId)
+        res.status(200).json({ status: "success", payload: product })
+    } catch (error) {
+        res.status(500).json( { status: 'error', message: 'Error al obtener el producto' } )
+    }
+})
+
 productsRouter.post('/', async(req,res) => {
     try {
         const { title, description, code, price, stock, category } = req.body
