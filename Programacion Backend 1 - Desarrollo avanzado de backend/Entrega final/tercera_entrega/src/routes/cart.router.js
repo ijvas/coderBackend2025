@@ -27,10 +27,12 @@ cartsRouter.get('/', async(req,res)=>{
 cartsRouter.get('/:cid', async(req, res) => {
     try {
         const cid = req.params.cid
-        const cart = await Cart.findById(cid).populate("products.product")
+        
+        const cart = await Cart.findById(cid).populate("products.product").lean()
         if(!cart) return res.status(404).json({ status: "error", message: "Carrito no encontrado"})
+        
+        res.render('cartDetail', { cart })
 
-        res.status(200).json({ status: "success", payload: cart})
     } catch (error) {
         res.status(404).json({ message: error.message });
     }
