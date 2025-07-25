@@ -20,10 +20,13 @@ productsRouter.get('/', async(req,res) => {
 productsRouter.get('/:pid', async(req,res)=>{
     try {
         const productId = req.params.pid
+
+        //Harcodeo el cartId para agregar luego en el detalle de producto a este carrito, ya que no se me ocurrió como obtener el cartId desde la vista de detalle de producto
+        const cartId = '68787fe751487e41766d717f'
         
         const product = await Product.findById(productId).lean()
 
-        res.render('productDetail', { product })
+        res.render('productDetail', { product, cartId })
 
     } catch (error) {
         res.status(500).json( { status: 'error', message: 'Error al obtener el producto' } )

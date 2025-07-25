@@ -41,12 +41,21 @@ cartsRouter.get('/:cid', async(req, res) => {
 cartsRouter.post('/:cid/product/:pid', async(req, res) => {
     try {
         const { cid, pid } = req.params
-        const { quantity } = req.body
-        
-        const updatedCart = await Cart.findByIdAndUpdate(cid, { $push: { products: { product: pid, quantity} } }, { new: true })
-        if(!updatedCart) return res.status(404).json({ status: "error", message: "Carrito no encontrado"})
 
-        res.status(201).json({ status: "success", payload: updatedCart })
+        //Esto lo comenté ya que aún no hice un botón o algo de donde tomar una cantidad desde el front.
+        // const { quantity = 1 } = req.body
+
+        const cart = await Cart.findById(cid)
+        if(!cart) return res.status(404).json({ status:"error", message: error.message })
+
+        const productInCart = cart.products.find(item => item.product.toString() === pid)
+
+        productInCart ? productInCart.quantity++ : cart.products.push({ product: pid, quantity: 1 })
+
+        await cart.save()
+
+        res.redirect(`/api/carts/${cid}`)
+
     } catch (error) {
         res.status(500).json({ message: error.message });
     }
