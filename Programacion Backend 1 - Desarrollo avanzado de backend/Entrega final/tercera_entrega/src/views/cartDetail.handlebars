@@ -1,13 +1,25 @@
-<h2>Carrito: {{cart._id}}</h2>
+<div class="container mt-5">
+  <h2>Carrito: {{cart._id}}</h2>
+  <hr>
 
-{{#if cart.products.length}}
-  <ul>
-    {{#each cart.products}}
-      <li>
-        <strong>{{this.product.title}}</strong> - Cantidad: {{this.quantity}}
-      </li>
-    {{/each}}
-  </ul>
-{{else}}
-  <p>El carrito está vacío.</p>
-{{/if}}
+    {{#if cart.products.length}}
+      {{!-- <ul> --}}
+        {{#each cart.products}}
+
+          <div class="row">
+            <img src="{{product.thumbnail}}" alt="img" class="col-1">
+            <h4 class="col-4">{{product.title}}</h4>
+            <p class="col-2">Quantity: {{this.quantity}}</p>
+            <p class="col-2">Price: ${{product.price}}</p>
+          </div>
+          <hr>
+          {{!-- <li>
+            <strong>{{this.product.title}}</strong> - Cantidad: {{this.quantity}}
+          </li> --}}
+        {{/each}}
+      {{!-- </ul> --}}
+    {{else}}
+      <p>El carrito está vacío.</p>
+    {{/if}}
+
+</div>
