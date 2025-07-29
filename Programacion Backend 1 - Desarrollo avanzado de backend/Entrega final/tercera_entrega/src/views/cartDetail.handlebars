@@ -1,9 +1,10 @@
 <div class="container mt-5">
+  
   <h2>Carrito: {{cart._id}}</h2>
   <hr>
 
     {{#if cart.products.length}}
-      {{!-- <ul> --}}
+
         {{#each cart.products}}
 
           <div class="row">
@@ -13,13 +14,13 @@
             <p class="col-2">Price: ${{product.price}}</p>
           </div>
           <hr>
-          {{!-- <li>
-            <strong>{{this.product.title}}</strong> - Cantidad: {{this.quantity}}
-          </li> --}}
+
         {{/each}}
-      {{!-- </ul> --}}
+
     {{else}}
+
       <p>El carrito está vacío.</p>
+
     {{/if}}
 
 </div>
