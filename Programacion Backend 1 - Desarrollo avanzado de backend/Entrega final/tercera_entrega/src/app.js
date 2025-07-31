@@ -9,6 +9,7 @@ import { Server } from 'socket.io'
 import http from 'http'
 import mongoose from 'mongoose'
 import Product from './models/product.model.js'
+import methodOverride from 'method-override'
 
 
 //Inicializamos las variables de entorno:
@@ -19,6 +20,7 @@ const app = express()
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'))
+app.use(methodOverride('_method'))
 const server = http.createServer(app)
 const io = new Server(server)
 const PORT = process.env.PORT

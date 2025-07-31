@@ -72,10 +72,11 @@ cartsRouter.delete('/:cid/product/:pid', async(req,res)=>{
 
         await cart.save()
 
-        res.status(200).json({ status: "success", payload: cart })
+        res.status(200).redirect(`/api/carts/${cid}`)
+        // res.status(200).json({ status: "success", message: "Producto eliminado del carrito", payload: cart })
 
     } catch (error) {
-        res.status(500).json({ status: "error", message: error.message })
+        res.status(500).json({ status: "error", message: "error al eliminar el producto del carrito" })
     }
 })
 

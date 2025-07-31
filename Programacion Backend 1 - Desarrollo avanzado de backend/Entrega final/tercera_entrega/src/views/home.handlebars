@@ -1,9 +1,9 @@
 <div class="container">
 
     <div class="row">
-        <div class="col"></div>
-        <div class="col"><h1>HOME</h1></div>
-        <div class="col"><a href="/api/carts/68787fe751487e41766d717f" class="btn btn-primary">Ver mi carrito</a></div>
+        <div class="col-2"></div>
+        <div class="col-8 d-flex justify-content-center"><h1>HOME</h1></div>
+        {{!-- <div class="col-2"><a href="/api/carts/68787fe751487e41766d717f" class="btn btn-primary">Ver mi carrito</a></div> --}}
     </div>
     
 </div>
@@ -20,7 +20,7 @@
                     <h6 class="card-subtitle mb-2 text-body-secondary">{{this.category}}</h6>
                     <p class="card-text">{{this.description}}</p>
                     <h6 class="card-subtitle mb-2 text-body-secondary">${{this.price}}</h6>
-                    <a href="/api/products/{{this._id}}" class="btn btn-primary">Ver detalles</a>
+                    {{!-- <a href="/api/products/{{this._id}}" class="btn btn-primary">Ver detalles</a> --}}
                 </div>
             </div>
         {{/each}}
